@@ -1,8 +1,87 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 0;
+}
+.title {
+  font-size: 3rem;
+  color: #8B8EC5;
+  text-shadow: 5px 5px 5px lightgray;
 }
 
 a {
   color: #00B7FF;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+}
+.http-top {
+  display: flex;
+  flex-direction: column;
+}
+.http-request {
+  padding: 0;
+  margin: 2rem;
+}
+.http-group {
+  display: flex;
+}
+.http-group select, .http-group input {
+  padding: 1rem;
+  height: fit-content;
+}
+.api-display {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 0;
+}
+.btn {
+  width: 5rem;
+  padding: 1rem;
+  margin: 2rem;
+  align-self: center;
+}
+.code-block {
+  background-color: lightgray;
+  margin: 0 10rem;
+}
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px;
+  padding: 2rem 12rem;
+  overflow: auto;
+  height: 35vh;
+}
+.api-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 20rem;
+  text-align: center;
+  color: wheat;
+  background-image: linear-gradient(to right bottom, rgba(119,119,119,0.6), rgba(119,119,119,0.6)),url("/images/sneakers.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #8B8EC5;
+  height: 10vh;
+  color: wheat;
+}
+footer a {
+  color: wheat;
 }

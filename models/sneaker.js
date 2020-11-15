@@ -10,7 +10,20 @@ const sneakerSchema = new Schema({
         type: String,
         default: "Nike"
     },
-    year: {
+    retailPrice: {
+        type: Number
+    },
+    description: {
+        type: String
+    },
+    img: {
+        type: [String]
+    },
+    releaseDate: {
+        type: Date,
+
+    },
+    releaseYear: {
         type: Number,
         default: 2020
     }
