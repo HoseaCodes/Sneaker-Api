@@ -2,31 +2,32 @@
 <html>
 
 <head>
-  <title><%= title %></title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <header>
-  <img src="/images/ker_API__1_-removebg-preview.png" alt="Logo" class="Logo" width="250" height="200" /></a>
+	<img src="/images/ker_API__1_-removebg-preview.png" alt="Logo" class="Logo" width="250" height="200" /></a>
 </header>
 
 <body>
-  <main class="container">
-    <h1 class="title">Welcome to <%= title %></h1>
-    <article class="http-top">
-      <section class="http-request">
-        <form class="http-group" action="" method="get">
-          <select name="" id="">
-            <option value="GET">GET</option>
-            <option value="GET">POST</option>
-          </select>
-          <p class="api-display">http://localhost:3000/api/sneakers</p>
-          <input type="text" name="" placeholder="1">
-        </form>
-      </section>
-      <button class="btn" type="submit">Submit</button>
-    </article>
-    <section class="code-block">
-      <pre>[
+	<main class="container">
+		<h1 class="title">Welcome to <%= title %></h1>
+		<h2 class="title">A Sneaker REST API</h2>
+		<article class="http-top">
+			<section class="http-request">
+				<form class="http-group" action="" method="get">
+					<select name="" id="">
+						<option value="GET">GET</option>
+						<option value="GET">POST</option>
+					</select>
+					<p class="api-display">http://localhost:3000/api/sneakers</p>
+					<input type="text" name="" placeholder="1">
+				</form>
+			</section>
+			<button class="btn" type="submit">Submit</button>
+		</article>
+		<section class="code-block">
+			<pre id="sneakers">[
 	{
 		"_id": "1",
 		"name": "George Washington",
@@ -72,24 +73,26 @@
 		"__v": 0
 	}
 ]</pre>
-    </section>
-    <h2 class="title"><%= title %> Documents</h2>
-    <article class="api-content">
-      <h2>Disclaimer</h2>
-      <p>We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space
-        Exploration Technologies Inc (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as well
-        as related names, marks, emblems and images are registered trademarks of their respective owners.</p>
-      <h2>Base URL</h2>
-      <p> The most current version of the API is v3, with the following base URL https://api.spacexdata.com/v3</p>
-      <h2>Privacy</h2>
-      <p>I do not log IP addresses or any personally identifiable information at the app or web server level. I
-        collect timestamps, HTTP methods, urls, and response times to adjust caching strategies on popular endpoints.
-        Below is a sample log line output:</p>
-    </article>
-  </main>
+		</section>
+		<h2 class="title"><%= title %> Documents</h2>
+		<article class="api-content">
+			<h2>Disclaimer</h2>
+			<p>We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space
+				Exploration Technologies Inc (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as
+				well
+				as related names, marks, emblems and images are registered trademarks of their respective owners.</p>
+			<h2>Base URL</h2>
+			<p> The most current version of the API is v3, with the following base URL https://api.spacexdata.com/v3</p>
+			<h2>Privacy</h2>
+			<p>I do not log IP addresses or any personally identifiable information at the app or web server level. I
+				collect timestamps, HTTP methods, urls, and response times to adjust caching strategies on popular
+				endpoints.
+				Below is a sample log line output:</p>
+		</article>
+	</main>
 </body>
 <footer>
-  <p>by <a href="http://hoseacodes.com">HoseaCodes</a></p>
+	<p>by <a href="http://hoseacodes.com">HoseaCodes</a></p>
 </footer>
 
 </html>

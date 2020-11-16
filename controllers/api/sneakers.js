@@ -11,6 +11,7 @@ module.exports = {
 function create(req, res) {
     Sneaker.create(req.body, function (err, sneaker) {
         res.status(201).json(sneaker);
+        console.log(err);
     });
 }
 

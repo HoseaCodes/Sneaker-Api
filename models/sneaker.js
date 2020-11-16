@@ -30,4 +30,4 @@ const sneakerSchema = new Schema({
 }, { timestamps: true });
 
 
-module.exports = mongoose.model('Sneakers', sneakerSchema);
+module.exports = mongoose.model('sneaker', sneakerSchema);
