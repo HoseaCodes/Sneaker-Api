@@ -24,72 +24,64 @@
 					<input type="text" name="" placeholder="1">
 				</form>
 			</section>
-			<button class="btn" type="submit">Submit</button>
+			<button class="btn" id="btn" type="submit">Submit</button>
 		</article>
 		<section class="code-block">
-			<pre id="sneakers">[
+			<pre id="sneakers">
+[
 	{
-		"_id": "1",
-		"name": "George Washington",
-		"partner": [
-			{
-				"_id": "1p",
-				"name": "Martha Dandridge",
-				"partner": [
-					"1"
-				],
-				"born": "1731-06-02T00:00:00.000Z",
-				"died": "1802-05-22T00:00:00.000Z",
-				"__v": 0
-			}
+		"type": "Jordan",
+		"img": [
+			"/images/AJ-1-High-OG-CO.JP-Midnight-Navy.jpg"
 		],
-		"born": "1732-02-22T00:00:00.000Z",
-		"died": "1799-12-14T00:00:00.000Z",
-		"tenure": 8,
+		"releaseYear": 2020,
+		"_id": "5fb038aa86834dff6574e60e",
+		"name": "Air Jordan 1 High OG CO.JP Midnight Navy",
+		"retailPrice": 170,
+		"description": "The Air Jordan 1 High OG CO.JP Midnight Navy was initially a Japan-exclusive back in 2001 but its returning for its first-ever retro this fall. The 2020 retro featured above essentially mimics the OG classic as details include white leather uppers with Midnight Navy overlays, Metallic Silver Swooshes and Wings branding. Finally Midnight Navy for the inner liner, Co.JP-branded insoles alongside a special 2001-2020 tag behind the tongue round out the style.",
+		"releaseDate": "2020-11-09T00:00:00.000Z",
+		"createdAt": "2020-11-14T20:06:02.047Z",
+		"updatedAt": "2020-11-14T20:06:02.047Z",
 		"__v": 0
 	},
 	{
-		"_id": "2",
-		"name": "John Adams",
-		"partner": [
-			{
-				"_id": "2p",
-				"name": "Abigail Smith",
-				"partner": [
-					"2"
-				],
-				"born": "1744-11-22T00:00:00.000Z",
-				"died": "1818-10-28T00:00:00.000Z",
-				"__v": 0
-			}
-		],
-		"born": "1735-10-30T00:00:00.000Z",
-		"died": "1826-07-04T00:00:00.000Z",
-		"tenure": 4,
-		"__v": 0
-	},
-		],
-		"born": "2020-04-10T04:00:00.000Z",
+		"type": "Adidas",
+		"img": [],
+		"releaseYear": 2020,
+		"_id": "5fb2b4a81c997f1411ce9221",
+		"name": "Pharrell X Adidas NMD Hu Black White",
+		"retailPrice": 220,
+		"description": "Donning black knitted uppers with embroidered Asian characters on the toe box, the only contrasting element consists of white speckled laces. Finally, matching black lace cage components and Boost tooling rounds out the design.",
+		"releaseDate": "2020-11-19T00:00:00.000Z",
+		"createdAt": "2020-11-16T17:19:36.204Z",
+		"updatedAt": "2020-11-16T17:19:36.204Z",
 		"__v": 0
 	}
-]</pre>
+]
+		</pre>
 		</section>
 		<h2 class="title"><%= title %> Documents</h2>
 		<article class="api-content">
-			<h2>Disclaimer</h2>
-			<p>We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space
+			<h2 class='sneaker-h2' onclick="hideContent()">Disclaimer</h2>
+			<p id="disclaimer" class="sneaker-p">We are not affiliated, associated, authorized, endorsed by, or in any
+				way officially
+				connected with Space
 				Exploration Technologies Inc (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as
 				well
 				as related names, marks, emblems and images are registered trademarks of their respective owners.</p>
-			<h2>Base URL</h2>
-			<p> The most current version of the API is v3, with the following base URL https://api.spacexdata.com/v3</p>
-			<h2>Privacy</h2>
-			<p>I do not log IP addresses or any personally identifiable information at the app or web server level. I
+			<h2 class='sneaker-h2' onclick="hideContent2()">Base URL</h2>
+			<p class="sneaker-p" id="baseUrl"> The most current version of the API is v3, with the following base URL
+				https://api.spacexdata.com/v3</p>
+			<h2 class='sneaker-h2' onclick="hideContent3()">Privacy</h2>
+			<p class="sneaker-p" id="privacy">I do not log IP addresses or any personally identifiable information
+				at the app or web
+				server level. I
 				collect timestamps, HTTP methods, urls, and response times to adjust caching strategies on popular
 				endpoints.
 				Below is a sample log line output:</p>
 		</article>
 	</main>
+	<script defer src="../javascripts/api.js"></script>
 </body>
 <footer>
 	<p>by <a href="http://hoseacodes.com">HoseaCodes</a></p>

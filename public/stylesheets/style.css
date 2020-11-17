@@ -57,21 +57,36 @@ pre {
   padding: 2rem 12rem;
   overflow: auto;
   height: 35vh;
+  width: 35vw;
 }
-.api-content {
+.sneaker-h2 {
+  font-size: 5rem;
+}
+.sneaker-h2:hover {
+  cursor: pointer;
+  font-size: 5.2rem;
+}
+.sneaker-p {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  display: none;
+}
+
+  .api-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 0 20rem;
   text-align: center;
-  color: wheat;
+  color: white;
   background-image: linear-gradient(to right bottom, rgba(119,119,119,0.6), rgba(119,119,119,0.6)),url("/images/sneakers.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
+  width: 100%;
 }
 footer {
   display: flex;
@@ -80,8 +95,9 @@ footer {
   text-align: center;
   background-color: #8B8EC5;
   height: 10vh;
-  color: wheat;
+  color: white;
 }
 footer a {
-  color: wheat;
+  color: white;
+  text-decoration: none;
 }
