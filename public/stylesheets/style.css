@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #8B8EC5;
   text-shadow: 5px 5px 5px lightgray;
 }
@@ -96,8 +96,10 @@ footer {
   background-color: #8B8EC5;
   height: 10vh;
   color: white;
+  font-size: 2rem;
 }
 footer a {
   color: white;
+  font-size: 2rem;
   text-decoration: none;
 }
