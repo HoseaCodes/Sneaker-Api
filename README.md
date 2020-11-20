@@ -1,4 +1,4 @@
-# [Sneaker API](http://www.mergeimmersive.com/)
+# [Sneaker API](https://sneaker-api-htx.herokuapp.com/)
 
 ## Created by: Dominique Hosea
 
@@ -23,7 +23,7 @@ other dependencies used:
 - Morgan - HTTP request logger middleware for node.js
 - Mongoose - for MongoDB validation
 
-Click this link here to go to [Sneaker-API](http://www.mergeimmersive.com/)
+Click this link here to go to [Sneaker-API](https://sneaker-api-htx.herokuapp.com/)
 
 
 
