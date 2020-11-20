@@ -44,6 +44,8 @@ a {
   padding: 1rem;
   margin: 2rem;
   align-self: center;
+  background-color: #8B8EC5;
+  color: white;
 }
 .code-block {
   background-color: lightgray;
@@ -86,6 +88,36 @@ pre {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
+}
+nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 15px ;
+}
+#adminIcon {
+ color: #8B8EC5; 
+ font-size: 2rem;
+ text-decoration: none;
+}
+.adminInput {
+  margin: 5px;
+}
+#formTitle {
+  text-align: center;
+}
+label {
+  margin-left: 5px;
+}
+.newPost {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
 }
 /* Footer */
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+<header>
+    <nav>
+        <a href="/">
+            <img src="/images/ker_API__1_-removebg-preview.png" alt="Logo" class="Logo" width="250" height="200" /></a>
+        </a>
+    </nav>
+</header>
+
+<body>
+    <main class="container">
+        <h1 class="title">Welcome to <%= title %></h1>
+        <h2 class="title">A Sneaker REST API</h2>
+        <article class="http-top">
+            <section>
+                <h3 id="formTitle">Create a new Sneaker</h3>
+                <form class="newPost" action="/admin" method="POST">
+                    <label for="name">Name</label>
+                    <input class="adminInput" type="text" name="name" placeholder="What is the name of the sneakers">
+                    <label for="type">Sneaker Type</label>
+                    <input class="adminInput" type="text" name="type" placeholder="What is the type of the sneakers">
+                    <label for="retailPrice">Retail Price</label>
+                    <input class="adminInput" type="number" name="retailPrice" placeholder="What is the retail price?">
+                    <label for="img">Images</label>
+                    <input class="adminInput" type="text" name="img" placeholder="Place your photos here...">
+                    <label for="releaseDate">Release Date</label>
+                    <input class="adminInput" type="date" name="releaseDate" placeholder="When were they released?">
+                    <label for="releaseYear"> Release Year</label>
+                    <input class="adminInput" type="text" name="releaseYear"
+                        placeholder="What year were they released?">
+                    <label for="description">Description</label>
+                    <textarea class="adminInput" name="description" cols="30" rows="10"
+                        placeholder="Tell me more about these sneakers"></textarea>
+                    <button class="adminInput" id="btn" type="submit"><i class="fa fa-pencil-square-o"
+                            aria-hidden="true"></i>Create Post</button>
+                </form>
+            </section>
+        </article>
+        <section class="code-block">
+            <pre id="sneakers">
+        </pre>
+        </section>
+    </main>
+    <script defer src="../javascripts/admin.js"></script>
+</body>
+<!-- Footer-->
+<footer class="footer-item">
+    <section class='footer-info'>
+        <div>
+            <h2>By:<a href="http://hoseacodes.com"> Hosea Codes</a></h2>
+            <p> <span>Phone: </span>+1 (281)-780-8424</p>
+            <p><span>Email: </span><a href="mailto:mr.dhosea@gmail.com">mr.dhosea@gmail.com</a> </p>
+        </div>
+        <div class='footer-built'>
+            <h2>Built With</h2>
+            <a href="https://nodejs.org/api/documentation.html">Node.JS</a>
+            <br>
+            <a href="https://ejs.co/#install">EJS</a>
+            <br>
+            <a href="https://javascript.info/">JavaScript</a>
+        </div>
+    </section>
+    <p>All Rights Reserved, &copy; 2020 Hosea Codes</p>
+</footer>
+
+</html>

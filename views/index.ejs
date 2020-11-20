@@ -3,10 +3,19 @@
 
 <head>
 	<title><%= title %></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <header>
-	<img src="/images/ker_API__1_-removebg-preview.png" alt="Logo" class="Logo" width="250" height="200" /></a>
+	<nav>
+		<a href="/">
+			<img src="/images/ker_API__1_-removebg-preview.png" alt="Logo" class="Logo" width="250" height="200" /></a>
+		</a>
+		<li>
+			<a id="adminIcon" href="/admin"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Admin</a>
+		</li>
+	</nav>
 </header>
 
 <body>
@@ -18,13 +27,13 @@
 				<form class="http-group" action="" method="get">
 					<select name="" id="">
 						<option value="GET">GET</option>
-						<option value="GET">POST</option>
+						<!-- <option value="GET">POST</option> -->
 					</select>
 					<p class="api-display">http://localhost:3000/api/sneakers</p>
 					<input type="text" name="" placeholder="1">
 				</form>
 			</section>
-			<button class="btn" id="btn" type="submit">Submit</button>
+			<button class="btn" id="btn" type="submit"><i class="fa fa-plug" aria-hidden="true"></i>&nbsp;Find</button>
 		</article>
 		<section class="code-block">
 			<pre id="sneakers">
@@ -82,6 +91,7 @@
 		</article>
 	</main>
 	<script defer src="../javascripts/api.js"></script>
+	<script src="https://use.fontawesome.com/5e16fb3200.js"></script>
 </body>
 <footer class="footer-item">
 	<section class='footer-info'>
