@@ -33,14 +33,14 @@ function update(req, res) {
         req.body,
         { new: true }
     ).then(function (sneaker) {
-        res.json(sneaker);
+        res.status(200).json(sneaker);
     });
 }
 
 
 function index(req, res) {
     Sneaker.find({}, function (err, sneakers) {
-        //senf JSON data
+        //send JSON data
         res.status(200).json(sneakers);
     });
 }
