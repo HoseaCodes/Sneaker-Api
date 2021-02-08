@@ -48,10 +48,8 @@ SneakerAPI is a REST API that serves the latest sneaker information. It can be u
 ![Views](https://i.imgur.com/52sI5xW.png)
 
 ### JavaScript Functions
-![JS1](https://i.imgur.com/OvIJqdt.png)
-![JS2](https://i.imgur.com/UslvrNS.png)
+![JS1](https://i.imgur.com/omdKaeG.png)
 
 ## Future Enhancements
 
-- Add user login 
-- Create a UI for delete and edit
+- Additional styling
