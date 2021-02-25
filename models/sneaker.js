@@ -2,11 +2,15 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const sneakerSchema = new Schema({
+    sneaker_id: {
+        type: String,
+        unique: true
+    },
     name: {
         type: String,
         required: true
     },
-    type: {
+    brand: {
         type: String,
         default: "Nike"
     },
@@ -25,9 +29,9 @@ const sneakerSchema = new Schema({
     },
     releaseYear: {
         type: Number,
-        default: 2020
+        default: 2021
     }
 }, { timestamps: true });
 
 
-module.exports = mongoose.model('sneaker', sneakerSchema);
+module.exports = mongoose.model('Sneakers', sneakerSchema);

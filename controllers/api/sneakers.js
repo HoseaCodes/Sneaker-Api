@@ -9,6 +9,9 @@ module.exports = {
 };
 
 function create(req, res) {
+    // const {sneaker_id, name, brand, retailPrice, description, img, releaseDate, releaseYear} = req.body;
+    const sneaker = Sneaker.findOne({ sneaker_id: sneaker_id })
+    if (sneaker) return res.status(400).json({ msg: "The sneakers already exists" })
     Sneaker.create(req.body, function (err, sneaker) {
         res.status(201).json(sneaker);
         console.log(err);
