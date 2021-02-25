@@ -1,42 +1,30 @@
-<!DOCTYPE html>
-<html>
+<%- include('./partials/header'); -%>
 
-<head>
-	<title><%= title %></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<header>
-	<nav>
-		<a href="/">
-			<img src="/images/ker_API__1_-removebg-preview.png" alt="Logo" class="Logo" width="250" height="200" /></a>
-		</a>
-		<li>
-			<a id="adminIcon" href="/admin"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Admin</a>
-		</li>
-	</nav>
-</header>
-
-<body>
-	<main class="container">
-		<h1 class="title">Welcome to <%= title %></h1>
-		<h2 class="title">A Sneaker REST API</h2>
-		<article class="http-top">
-			<section class="http-request">
-				<form class="http-group" action="" method="get">
-					<select name="" id="">
-						<option value="GET">GET</option>
-						<!-- <option value="GET">POST</option> -->
-					</select>
-					<p class="api-display">http://localhost:3000/api/sneakers</p>
-					<input type="text" name="" placeholder="1">
-				</form>
-			</section>
-			<button class="btn" id="btn" type="submit"><i class="fa fa-plug" aria-hidden="true"></i>&nbsp;Find</button>
-		</article>
-		<section class="code-block">
-			<pre id="sneakers">
+	<body>
+		<div class="main-img-group">
+			<img class="sneaker-img" src="images/1.png" alt="Sneakers">
+			<img class="sneaker-img" src="images/2.png" alt="Sneakers">
+		</div>
+		<main class="container">
+			<h1 class="main-title">Welcome to <%= title %>
+			</h1>
+			<p class="main-tagline">Find sneaker information has never been this easy.</p>
+			<article class="http-top">
+				<section class="http-request">
+					<form class="http-group" action="" method="get">
+						<select name="" id="">
+							<option value="GET">GET</option>
+							<!-- <option value="GET">POST</option> -->
+						</select>
+						<p class="api-display">http://localhost:3000/api/sneakers</p>
+						<input type="text" name="" placeholder="1">
+					</form>
+				</section>
+				<button class="btn" id="btn" type="submit"><i class="fa fa-plug"
+						aria-hidden="true"></i>&nbsp;Find</button>
+			</article>
+			<section class="code-block">
+				<pre id="sneakers">
 [
 	{
 		"type": "Jordan",
@@ -68,48 +56,33 @@
 	}
 ]
 		</pre>
-		</section>
-		<h2 class="title"><%= title %> Documents</h2>
-		<article class="api-content">
-			<h2 class='sneaker-h2' onclick="hideContent()">Disclaimer</h2>
-			<p id="disclaimer" class="sneaker-p">We are not affiliated, associated, authorized, endorsed by, or in any
-				way officially connected with Adidas, Nike or Jordan, or any of its subsidiaries or its affiliates. The
-				names as related names, marks, emblems and images are registered trademarks of their respective owners.
-			</p>
-			<h2 class='sneaker-h2' onclick="hideContent2()">Base URL</h2>
-			<p class="sneaker-p" id="baseUrl"> The most current version of the API is v1, with the following base URL
-				http://localhost:3000/api/sneakers
+			</section>
+			<h2 class="title">
+				<%= title %> Documents
+			</h2>
+			<article class="api-content">
+				<h2 class='sneaker-h2' onclick="hideContent()">Disclaimer</h2>
+				<p id="disclaimer" class="sneaker-p">We are not affiliated, associated, authorized, endorsed by, or in
+					any
+					way officially connected with Adidas, Nike or Jordan, or any of its subsidiaries or its affiliates.
+					The
+					names as related names, marks, emblems and images are registered trademarks of their respective
+					owners.
+				</p>
+				<h2 class='sneaker-h2' onclick="hideContent2()">Base URL</h2>
+				<p class="sneaker-p" id="baseUrl"> The most current version of the API is v1, with the following base
+					URL
+					http://localhost:3000/api/sneakers
 
-			</p>
-			<h2 class='sneaker-h2' onclick="hideContent3()">Privacy</h2>
-			<p class="sneaker-p" id="privacy">I do not log IP addresses or any personally identifiable information
-				at the app or web
-				server level. I
-				collect timestamps, HTTP methods, urls, and response times to adjust caching strategies on popular
-				endpoints.
-				Below is a sample log line output:</p>
-		</article>
-	</main>
-	<script defer src="../javascripts/api.js"></script>
-	<script src="https://use.fontawesome.com/5e16fb3200.js"></script>
-</body>
-<footer class="footer-item">
-	<section class='footer-info'>
-		<div>
-			<h2>By:<a href="http://hoseacodes.com"> Hosea Codes</a></h2>
-			<p> <span>Phone: </span>+1 (281)-780-8424</p>
-			<p><span>Email: </span><a href="mailto:mr.dhosea@gmail.com">mr.dhosea@gmail.com</a> </p>
-		</div>
-		<div class='footer-built'>
-			<h2>Built With</h2>
-			<a href="https://nodejs.org/api/documentation.html">Node.JS</a>
-			<br>
-			<a href="https://ejs.co/#install">EJS</a>
-			<br>
-			<a href="https://javascript.info/">JavaScript</a>
-		</div>
-	</section>
-	<p>All Rights Reserved, &copy; 2020 Hosea Codes</p>
-</footer>
+				</p>
+				<h2 class='sneaker-h2' onclick="hideContent3()">Privacy</h2>
+				<p class="sneaker-p" id="privacy">I do not log IP addresses or any personally identifiable information
+					at the app or web
+					server level. I
+					collect timestamps, HTTP methods, urls, and response times to adjust caching strategies on popular
+					endpoints.
+					Below is a sample log line output:</p>
+			</article>
+		</main>
 
-</html>
+		<%- include('./partials/footer'); -%>

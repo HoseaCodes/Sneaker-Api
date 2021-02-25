@@ -1,0 +1,109 @@
+.auth-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.auth-logos, .auth-options, .main-nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.auth-options {
+    font-size: .8rem;
+    width: 200px;
+    padding-right: 8%;
+    margin-bottom: 0%;
+}
+
+.auth-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.auth-logo, .main-nav-link {
+    padding-left: 8%;
+}
+
+.auth-options, .main-nav-links {
+    list-style: none;
+}
+
+.main-nav-links {
+    width: 45%;
+}
+
+.main-nav-link {
+    font-size: 1.3rem;
+}
+
+.auth-options a, .main-nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  #adminIcon {
+   color: #8B8EC5; 
+   font-size: 2rem;
+   text-decoration: none;
+  }
+  .adminInput {
+    margin: 5px;
+  }
+
+.nav-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 8%;
+    padding-right: 2%;
+    margin: 2%;
+}
+
+.heart-img {
+    width: 2rem;
+}
+
+.search-bar {
+    background-color: whitesmoke;
+    border-radius: 22px;
+    padding: 4%;
+    border: none;
+}
+
+.search-bar::placeholder {
+    background-image: url("/images/search.svg");
+    background-repeat: no-repeat;
+    text-indent: 20%;
+    opacity: .5;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 2%;
+}
+
+.banner-quotes {
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.banner-link {
+    color: black;
+    font-size: .8rem;
+}

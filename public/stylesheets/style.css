@@ -3,15 +3,20 @@ body {
   display: block;
   margin: 0;
 }
-.title {
-  font-size: 4rem;
-  color: #8B8EC5;
-  text-shadow: 5px 5px 5px lightgray;
+
+.main-img-group {
+  padding: 0 8%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-a {
-  color: #00B7FF;
+.sneaker-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -89,25 +94,7 @@ pre {
   background-attachment: fixed;
   width: 100%;
 }
-nav {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
-nav li {
-  margin-right: 15px ;
-}
-#adminIcon {
- color: #8B8EC5; 
- font-size: 2rem;
- text-decoration: none;
-}
-.adminInput {
-  margin: 5px;
-}
 #formTitle {
   text-align: center;
 }
