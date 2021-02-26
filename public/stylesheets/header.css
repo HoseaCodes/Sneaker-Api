@@ -31,7 +31,7 @@
 }
 
 .main-nav-links {
-    width: 45%;
+    width: 65%;
 }
 
 .main-nav-link {
@@ -42,24 +42,26 @@
     text-decoration: none;
     color: black;
 }
-
 .main-nav {
+    display: flex;
+}
+
+.main-nav-mobile {
+    display: none;
+    background-color: black;
+}
+
+.main-nav-mobile img {
+    width: 20px;
+}
+
+.main-nav-group {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
-  
-  
-  #adminIcon {
-   color: #8B8EC5; 
-   font-size: 2rem;
-   text-decoration: none;
-  }
-  .adminInput {
-    margin: 5px;
   }
 
 .nav-form {
@@ -107,3 +109,142 @@
     color: black;
     font-size: .8rem;
 }
+
+@media only screen and (max-width: 1023px) {
+    .main-nav-mobile {
+        display: contents;
+        width: 100%;
+    }
+    .mobile-overlay {
+        padding: 0% 4%;
+        width: 20%;
+    }
+    .main-nav-mobile img {
+        margin: 8%;
+        opacity: 0.8;
+    }
+    .main-nav-group, .auth-nav {
+        display: none;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    /* background-color: rgba(0,0,0, 0.9); */
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay-nav-link {
+      list-style: none;
+  }
+
+  .overlay-info {
+      margin: 0 auto;
+      padding-top: 30%;
+      width: 80%;
+      text-align: left;
+      font-size: 1.3rem;
+      opacity: 0.8;
+  }
+
+  .overlay-btn {
+    padding-top: 10%;
+    opacity: 0.9;
+  }
+
+  .overlay-btn-join {
+      padding: 2% 8%;
+      border-radius: 16px;
+      background-color: black;
+      color: white;
+  }
+  .overlay-btn-sign {
+      padding: 2% 8%;
+      border-radius: 16px;
+      background-color: transparent;
+      border-color: darkgray;
+      color: black;
+  }
+
+  .overlay-logos{
+      display: flex;
+      flex-direction: column;
+      padding: 10%;
+  }
+
+  .overlay-logo {
+      display: flex;
+  }
+  
+  .overlay-logo-img {
+      padding-bottom: 10%;
+      padding-right: 6%;
+      width: 40px;
+      height: 40px;
+  }
+
+  .overlay a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay-info a {
+      font-weight: bold;
+  }
+
+  .overlay-nav-link a {
+    padding: 2% 10%;
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-align: left;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    font-size: 60px;
+    filter: none !important;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
