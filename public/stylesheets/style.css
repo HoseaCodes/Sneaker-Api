@@ -11,7 +11,7 @@ body {
   justify-content: center;
 }
 
-.sneaker-img {
+.sneaker-img, .latestReleaseSneaker {
   width: 50%;
   height: auto;
   object-fit: cover;
@@ -22,7 +22,62 @@ body {
   flex-direction: column;
   margin: 0;
   align-items: center;
+  padding: 4%;
 }
+
+.main-quotes {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 4rem;
+  width: 40%;
+  text-align: center;
+  line-height: 80%;
+}
+
+.main-tagline {
+  font-size: 1.2rem;
+  padding: 2%;
+}
+
+.latestRelease {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.latestReleaseSneaker{
+  padding: 1%;
+  width: 75%;
+}
+
+.sign-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15% 0%;
+}
+.sign-up-img {
+  width: 80%;
+}
+
+.sign-up-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.fName {
+  margin-right: 5%;
+}
+
+.fName, .lName {
+  width: 40%;
+}
+
+.email {
+  width: 85%;
+}
+
 .http-top {
   display: flex;
   flex-direction: column;
@@ -44,14 +99,7 @@ body {
   padding: 1rem;
   margin: 0;
 }
-.btn {
-  width: 5rem;
-  padding: 1rem;
-  margin: 2rem;
-  align-self: center;
-  background-color: #8B8EC5;
-  color: white;
-}
+
 .code-block {
   background-color: lightgray;
   margin: 0 10rem;
@@ -114,44 +162,49 @@ footer {
   height: 100%;
   font-size: 1.5em;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #8B8EC5;
-  font-family: 'Lato', sans-serif;
-  margin-bottom: 0px;
-   color: white;
+  padding: 3% 0% 0%;
+  background-color: rgb(18, 18, 18);
+  color: whitesmoke;
 }
-.footer-item{
+
+.footer-center-links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-center-links a {
+  font-size: 1rem;
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
-.footer-built {
+
+.footer-bottom {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 10%;
-
+  justify-content: space-around;
+  font-size: 1rem;
 }
 
-.footer-info {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  opacity: .7;
-}
-
-footer a {
+.footer-bottom a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
+}
+
+.footer-bottom-right, .footer-bottom-left {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  color: whitesmoke;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 2%;
 }
 
 footer a:hover {
-  color: wheat;
+  color: darkred;
 }
 
 footer p {
