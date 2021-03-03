@@ -32,35 +32,35 @@
 				<label class="mb-3" for="gender">Gender</label>
 				<div class="input-group mb-3">
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-							value="option1">
+						<input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="option1">
 						<label class="form-check-label" for="inlineRadio1">Male</label>
 					</div>
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-							value="option2">
+						<input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="option2">
 						<label class="form-check-label" for="inlineRadio2">Female</label>
 					</div>
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-							value="option2">
+						<input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="option2">
 						<label class="form-check-label" for="inlineRadio2">Prefer not to say</label>
 					</div>
 				</div>
 
 				<div class="checkbox mb-3">
-					<label class="mb-3">
-						<input type="checkbox" value="remember-me"> Sign me up to Sneakers Club, featuring
-						latest product info, news about upcoming events and more. Please see our Terms &
-						Conditions and Privacy Policy and Sneakers Club Terms & Conditions for more details.
-						I agree to receive personalised email marketing messages from Sneakers API.
+					<label class="checkbox-group mb-3">
+						<input class="checkbox" type="checkbox" name="emailAgreement" value="remember-me">
+						<p>Sign me up to Sneakers Club, featuring
+							latest product info, news about upcoming events and more. Please see our Terms &
+							Conditions and Privacy Policy and Sneakers Club Terms & Conditions for more details.
+							I agree to receive personalised email marketing messages from Sneakers API.</p>
+
 					</label>
-					<label>
-						<input type="checkbox" value="remember-me"> I have read and agree to the Terms and
-						Condition.
+					<label class="checkbox-group">
+						<input class="checkbox" type="checkbox" name="termAgreement" value="remember-me">
+						<p>I have read and agree to the Terms and
+							Condition.</p>
 					</label>
 				</div>
-				<button class=" btn btn-lg btn-primary" type="submit">Sign in</button>
+				<button class="sign-up-btn" type="submit">Sign up </button>
 				<p class="mt-3 mb-3 text-muted">By clicking Sign Up, you have read and agreed to the adidas Privacy
 					Notice
 				</p>

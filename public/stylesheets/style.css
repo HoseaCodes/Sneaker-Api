@@ -143,9 +143,7 @@ pre {
   width: 100%;
 }
 
-#formTitle {
-  text-align: center;
-}
+
 label {
   margin-left: 5px;
 }
@@ -183,6 +181,41 @@ footer {
   display: flex;
   justify-content: space-around;
   font-size: 1rem;
+}
+
+.fName,.lName, .email {
+  padding: 2%;
+  outline: none;
+}
+.fName:focus,.lName:focus, .email:focus {
+ border-bottom: 2px solid darkred;
+}
+
+.fName::placeholder, .lName::placeholder, .email::placeholder {
+  text-indent: 10px;
+}
+
+.sign-up-btn {
+  padding: 2% 8% 2% 6% !important;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem !important;
+  background-color: rgb(18, 18, 18) !important;
+  border-color: rgb(18, 18, 18) !important;
+  color: white;
+}
+
+.checkbox{
+  margin-top: 1% !important;
+}
+
+.checkbox-group {
+  display: flex;
+}
+
+.checkbox-group p {
+  padding-left: 2%;
 }
 
 .footer-bottom a {

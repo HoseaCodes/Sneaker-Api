@@ -1,6 +1,9 @@
 # [Sneaker API](https://sneaker-api-htx.herokuapp.com/)
 ## [www.sneakerapi.io](www.sneakerapi.io)
+### Original Log
 ![Logo](https://i.imgur.com/or5BPQK.png?1)
+### New Logo
+![Logo](public/images/logo.svg)
 ## Created by: Dominique Hosea
 
 ### November 2020
@@ -11,7 +14,12 @@ I have always had an interest in sneakers. In the process of making projects I w
 Sneaker API produces JSON data with descriptions, images, prices and release dates of the most popular sneakers. You can make HTTP request to my API to get the JSON data. On the home page you can see some of the sample JSON data if you click the submit button.
 
 ## Homepage 
+### Original
 ![SneakerAPI](https://i.imgur.com/Ux1OJls.png)
+### New
+![SneakerAPI](public/images/homepage.png)
+
+
 
 ## Technologies Used
 
