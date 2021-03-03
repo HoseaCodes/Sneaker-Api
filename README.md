@@ -49,7 +49,7 @@ other dependencies used:
 
 ---
 
-## Click this link here to go to [Sneaker-API](https://sneaker-api-htx.herokuapp.com/)
+## Click this link here to go to [Sneaker-API]((www.sneakerapi.io)
 
 ---
 
@@ -85,4 +85,5 @@ API - Routes
 
 - Add user login 	- Additional styling
 - Create a UI for delete and edit
-
+---
+## Click this link here to go to [Sneaker-API]((www.sneakerapi.io)
