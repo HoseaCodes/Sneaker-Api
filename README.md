@@ -4,6 +4,8 @@
 ![Logo](https://i.imgur.com/or5BPQK.png?1)
 ### New Logo
 ![Logo](public/images/logo.svg)
+
+
 ## Created by: Dominique Hosea
 
 ### November 2020
@@ -14,6 +16,8 @@ I have always had an interest in sneakers. In the process of making projects I w
 Sneaker API produces JSON data with descriptions, images, prices and release dates of the most popular sneakers. You can make HTTP request to my API to get the JSON data. On the home page you can see some of the sample JSON data if you click the submit button.
 
 ## Homepage 
+---
+
 ### Original
 ![SneakerAPI](https://i.imgur.com/Ux1OJls.png)
 ### New
@@ -34,19 +38,35 @@ other dependencies used:
 
 - Morgan - HTTP request logger middleware for node.js
 - Mongoose - for MongoDB validation
+- Body Parser - handles user-controlled inpu
+- Dotenv - stores configuration in the environment separate from code is based on The Twelve-Factor App methodology
 
-Click this link here to go to [Sneaker-API](https://sneaker-api-htx.herokuapp.com/)
+## External APIs Used
+---
+## [MainChimp](https://mailchimp.com/developer/marketing/api/root/)
+- Mailchimp manages your audiences, integrate your data, and send timely, relevant email campaigns.
+
+
+---
+
+## Click this link here to go to [Sneaker-API](https://sneaker-api-htx.herokuapp.com/)
+
+---
 
 ## Getting Started
+---
 
 SneakerAPI is a REST API that serves the latest sneaker information. It can be used without any API token, membership, registration or payment. It supports a variety of filters that can be applied to get the sneaker of your choice. The usage only requires basic knowledge of HTTP requests and JSON.
 
 ## Data Structure
+---
 
 ### Model
 ![Model](https://i.imgur.com/z8EM8Ck.png)
 
 ### Routes
+API - Routes
+
 ![Routes](https://i.imgur.com/h8sEQ9h.png)
 
 ### Controllers 
@@ -61,6 +81,7 @@ SneakerAPI is a REST API that serves the latest sneaker information. It can be u
 
 
 ## Future Enhancements	
+---
 
 - Add user login 	- Additional styling
 - Create a UI for delete and edit
