@@ -3,7 +3,7 @@
 ### Original Log
 ![Logo](https://i.imgur.com/or5BPQK.png?1)
 ### New Logo
-![Logo](public/images/logo.svg)
+![Logo](public/images/logo.png)
 
 
 ## Created by: Dominique Hosea
