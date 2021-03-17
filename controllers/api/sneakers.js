@@ -7,9 +7,8 @@ module.exports = {
     delete: removeSneaker,
     update
 };
-
+//Create a sneaker
 function create(req, res) {
-    // const {sneaker_id, name, brand, retailPrice, description, img, releaseDate, releaseYear} = req.body;
     const sneaker = Sneaker.findOne({ sneaker_id: sneaker_id })
     if (sneaker) return res.status(400).json({ msg: "The sneakers already exists" })
     Sneaker.create(req.body, function (err, sneaker) {
@@ -17,19 +16,19 @@ function create(req, res) {
         console.log(err);
     });
 }
-
+//Show one sneakers
 function show(req, res) {
     Sneaker.findById(req.params.id, function (err, sneaker) {
         res.status(200).json(sneaker);
     });
 }
-
+//Remove specific sneaker
 function removeSneaker(req, res) {
     Sneaker.findByIdAndDelete(req.params.id, function (err, sneaker) {
         res.json(sneaker);
     })
 }
-
+//Update a sneaker
 function update(req, res) {
     Sneaker.findByIdAndUpdate(
         req.parmas.id,
@@ -40,7 +39,7 @@ function update(req, res) {
     });
 }
 
-
+//Show all sneakers
 function index(req, res) {
     Sneaker.find({}, function (err, sneakers) {
         //send JSON data

@@ -11,7 +11,7 @@ function index(req, res) {
         title: 'Sneaker API'
     });
 }
-
+//Handle subscription sign ups
 function newsletterReq(req, res) {
     console.log(req.body)
     const firstName = req.body.fName;
@@ -56,7 +56,7 @@ function newsletterReq(req, res) {
     request.write(jsonData);
     request.end()
 }
-
+// If sign fails
 function failure(req, res) {
     res.redirect("/")
 }
