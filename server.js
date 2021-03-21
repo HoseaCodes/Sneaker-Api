@@ -5,6 +5,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const axios = require('axios');
+const cheerio = require('cheerio');
 
 require('dotenv').config()
 
@@ -32,6 +34,72 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/', adminRouter);
 app.use('/api', apiRouter);
+
+// Get sneaker data
+async function getSneakerData() {
+  try {
+    const siteUrl = 'https://www.nicekicks.com/air-jordan-release-dates/'
+    const { data } = await axios({
+      method: "GET",
+      url: siteUrl,
+    })
+    const $ = cheerio.load(data);
+    // console.log(data)
+    // console.log($)
+    const eleSelector = '#main-content > div > main > article'
+
+    const keys = [
+      'date',
+      'date',
+      'name',
+      'name',
+      'color',
+      'price',
+      'brand',
+      'name',
+      'name',
+      'color',
+      'price',
+      'brand'
+    ]
+
+    const sneakerArr = []
+
+    $(eleSelector).each((parentIdx, parentElem) => {
+      let keyIdx = 0;
+      const sneakerObj = {}
+
+      $(parentElem).children().each((childrenIdx, childElem) => {
+
+        const articleValue = $(childElem).text()
+        // console.log(articleValue)
+
+        if (articleValue) {
+          sneakerObj[keys[keyIdx]] = articleValue
+
+          keyIdx++
+        }
+      })
+      sneakerArr.push(sneakerObj)
+    })
+    return (sneakerArr)
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+app.get('/api/sneaker-data', async (req, res) => {
+  try {
+    const sneakerData = await getSneakerData()
+    return res.status(200).json({
+      result: sneakerData
+    })
+  } catch (err) {
+    return res.status(500).json({
+      err: err.toString(),
+    })
+  }
+})
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
